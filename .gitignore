@@ -1,0 +1,51 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+
+# ── Environment ───────────────────────────────────────────────────────────────
+.env
+.venv/
+venv/
+env/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Raw / processed data (too large for GitHub) ───────────────────────────────
+data/raw/
+**/data/processed_data_*/
+*.parquet
+
+# ── CSV files (raw dataset) ───────────────────────────────────────────────────
+# Raw traffic CSVs are excluded; demo files below are explicitly kept
+*.csv
+!**/demo/*.csv
+
+# ── Large trained RF models (exceed GitHub 100 MB limit) ─────────────────────
+# Retrain using scripts in training/ — see README for instructions
+**/models/trained/rf_34.pkl
+**/models/trained/binary_rf_2_8.pkl
+**/models/trained/multiclass_rf_2_8.pkl
+
+# Small models (logistic + preprocessing) ARE tracked — do not add them here
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp

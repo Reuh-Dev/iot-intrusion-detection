@@ -1,0 +1,10 @@
+# Deployment dependencies for the FastAPI Docker image.
+fastapi==0.136.1
+uvicorn==0.46.0
+python-multipart==0.0.20
+
+# Python 3.10-compatible runtime stack.
+pandas==2.3.3
+numpy==2.2.6
+scikit-learn==1.7.2
+joblib==1.5.3
